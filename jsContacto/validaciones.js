@@ -9,11 +9,11 @@ function emailValido() {
 	var valor = document.getElementById("email").value;
 	var vlce = false;
 	if (!expresion.email.test(valor)){
-		alert('Direccion de Correo No valida...!!!');
+		alert('Correo no válido!!!');
 		vlce = false;
 	}
 	else{
-		console.log("Direccion de Correo Correcta");
+		console.log("Correo válido!!!");
 		vlce = true;
 	}
 	return vlce;
@@ -25,7 +25,7 @@ function telefonoValido(){
 	if(valor.length == 10 && !isNaN(valor)){
 		vltl = true;
 	}else{
-		alert('El Numero de telefono ingresado es Incorrecto');
+		alert('Ingrese un npumero válido');
 	}
 	return vltl;
 }
@@ -38,7 +38,7 @@ function delay(n){
 
 function validar(){
 	if(emailValido() && telefonoValido()){
-		alert("Los datos ingresados son Correctos");
+		alert("Los datos ingresados son correctors!!!");
 		return true;
 	}else{
 		return false;
